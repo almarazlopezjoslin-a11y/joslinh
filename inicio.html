@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | CETIS 47</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>CETIS 47</h1>
+    <p>Centro de Estudios Tecnológicos Industrial y de Servicios</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+
+
+<main>
+    <article>
+        <h2>Bienvenido al CETIS 47</h2>
+        <p>Somos una institución comprometida con la formación técnica y profesional de nuestros estudiantes. En CETIS 47 impulsamos el conocimiento, la innovación y los valores.</p>
+    </article>
+</main>
+
+<footer>
+    <p>© 2025 CETIS 47 — Todos los derechos reservados</p>
+</footer>
+
+<script>
+    let index = 0;
+    const slides = document.querySelectorAll(".carousel img");
+    setInterval(() => {
+        slides.forEach((img, i) => img.style.display = i === index ? "block" : "none");
+        index = (index + 1) % slides.length;
+    }, 3000);
+</script>
+</body>
+</html>

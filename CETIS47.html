@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CETIS47</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CETIS 47</h1>
+        <p>Centro de Estudios Tecnológicos Industrial y de Servicios</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="programacion.html">Programación</a></li>
+            <li><a href="instalaciones.html">Instalaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <form>
+            <input type="search" name="search" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <section class="carousel">
+        <div class="slides">
+            <img src="cetis6.jpg" alt="cetis6">
+            <img src="cetis4.jpeg" alt="cetis4">
+            <img src="cetis3.jpg_large" alt="cetis3">
+        </div>
+    </section>
+
+    <main>
+        <article>
+            <h2>José María Morelos y Pavón</h2>
+            
+
+            <p>
+                El CETIS 47 es un centro educativo de nivel medio superior ubicado en Gómez Palacio, Durango. Ofrece bachillerato técnico bivalente con especialidades en Programación, Administración de Recursos Humanos y Soporte y Mantenimiento de Equipos de Cómputo. 
+            </p>
+
+            <h3>Contacto</h3>
+            <p>
+                📍 Calzada Lázaro Cárdenas s/n, Armando del Castillo, 35070 Gómez Palacio, Durango, México<br>
+                ☎️ 87-17-90-0866 / 87-17-90-0867<br>
+                🕰 Fundado: 1 de noviembre de 1979<br>
+                🏫 Institución pública de nivel medio superior.
+            </p>
+        </article>
+
+        <aside>
+            <h2>Áreas relacionadas</h2>
+            <ul>
+                <li><a href="#">Programación</a></li>
+                <li><a href="#">Refrigeración</a></li>
+                <li><a href="#">Contabilidad</a></li>
+                <li><a href="#">Mantenimiento</a></li>
+                <li><a href="#">Administración de RH</a></li>
+                <li><a href="#">Administración de Empresas</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2025 CETIS 47 — Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Carrusel automático
+        let index = 0;
+        const slides = document.querySelectorAll(".carousel img");
+        setInterval(() => {
+            slides.forEach((img, i) => img.style.display = i === index ? "block" : "none");
+            index = (index + 1) % slides.length;
+        }, 3000);
+    </script>
+</body>
+</html>
+
